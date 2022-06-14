@@ -85,11 +85,11 @@ en caso de no ser correctamente entrenadas.
 
 Las Redes Generativas Adversariales representan un gran paso en el desarrollo de la Inteligencia
 Artificial. Estas son un caso particular de las Redes Neuronales Artificiales nacidas en el siglo XX.
-Como dijo \href{https://www.technologyreview.com/author/martin-giles/}{Martin Giles} 
+Como dijo Martin Giles 
 ``Al enfrentar las redes neuronales entre sí, Ian Goodfellow ha creado una poderosa herramienta 
 de IA. Ahora él y el resto de nosotros, debemos afrontar las consecuencias.''. Pero, para comprender 
 esta frase primero debemos conocer las siguientes interrogantes. ¿Qué son y cómo surgieron las redes neuronales? 
-¿Cúal es la idea detrás de las RGA y cómo surgió? y por supuesto ¿Quién es Ian Goodfellow?.
+¿Cúal es la idea detrás de las RGA (GAN por sus siglas en inglés), cómo surgieron? y por supuesto ¿Quién es Ian Goodfellow?.
 
 \section{Antecedentes de las GAN}
 Evolución de las Redes Neuronales en Ciencias de la Computación:
@@ -115,7 +115,7 @@ Evolución de las Redes Neuronales en Ciencias de la Computación:
     \end{itemize}
     \item{2014 – Generative Adversarial Networks (GAN)}
 
-\end{itemize}[citar]
+\end{itemize}
 
 \newpage
 \subsection{Perceptrón}
@@ -131,7 +131,7 @@ un gigantezco primer paso en la dirección correcta. Estas surgieron
 entre las décadas de 1950 y 1960 cuando el científico Frank Rosenblatt, 
 inspirado en el trabajo de Warren McCulloch y Walter Pitts creó el 
 Perceptrón, la unidad desde donde nacerían y se potenciarían las 
-redes neuronales artificiales.
+redes neuronales artificiales\cite{wikipercept}.
 
 Frank Rossenblatt (11 de julio de 1928-11 de julio de 1971) fue un
 psicólogo estadounidense notable en el campo de inteligencia
@@ -141,7 +141,7 @@ sénior y jefe de la sección de sistemas cognitivos,
 también dirigió sus primeros trabajos 
 sobre perceptrones, que culminaron en el desarrollo
 y construcción del hardware del 
-perceptrón Mark I en 1960.
+perceptrón Mark I en 1960\cite{wikifrank}.
 Este era esencialmente el primer ordenador que podría aprender 
 habilidades nuevas a prueba y error, utilizando un tipo de red 
 neuronal que simula el proceso de pensamiento humano. 
@@ -179,7 +179,7 @@ mecanismo automático para adaptar los pesos de la capa oculta.
 Rumelhart y otros autores, en 1986, presentan la ``Regla Delta 
 Generalizada'' para adaptar los pesos propagando los errores hacia 
 atrás, es decir, propagar los errores hacia las capas ocultas 
-inferiores.
+inferiores\cite{wikimultilayer}.
 
 
 De esta forma se consigue trabajar con múltiples capas y con 
@@ -207,7 +207,7 @@ neuronas ``bias'' que siempre suman 1 en las diversas capas para
 resolver ciertas situaciones. Ahora las salidas en vez de ser 0 ó 
 1, será d(w . x + b) donde d será la función sigmoide definida 
 como $d(z) = \dfrac{1}{( 1 +e^{-z})}$ . Esta sería la primera 
-función de activación.
+función de activación\cite{wikilogit}.
 \\
 \\
 \begin{wrapfigure}{r}{0.1\textwidth} %this figure will be at the right
@@ -219,7 +219,7 @@ función de activación.
 La función logística o sigmoidal fue desarrollada como un modelo 
 de crecimiento de población y nombrada ``logística'' por Pierre 
 François Verhulst en las décadas de 1830 y 1840, bajo la dirección 
-de Adolphe Quetelet.
+de Adolphe Quetelet\cite{wikipierre}.
 En su primer artículo (1838), Verhulst no especificó cómo ajustaba 
 las curvas a los datos. En su artículo más detallado (1845), 
 Verhulst determinó los tres parámetros del modelo haciendo que la 
@@ -327,7 +327,7 @@ aprendizaje automático , visión por computadora, robótica móvil y
 neurociencia computacional. Es profesor de plata del Courant 
 Institute of Mathematical Sciences de la Universidad de Nueva York 
 y vicepresidente, científico jefe de IA en Meta ( Anteriormente 
-Facebook ).
+Facebook )\cite{wikiyann}.
 \newpage
 Es conocido por su trabajo en reconocimiento óptico de caracteres 
 y visión por computadora utilizando redes neuronales 
@@ -420,7 +420,7 @@ psicólogo cognitivo e informático británico-canadiense, más
 conocido por su trabajo en redes neuronales artificiales. Desde 
 2013, divide su tiempo trabajando para Google (Google Brain) y la 
 Universidad de Toronto. En 2017, cofundó y se convirtió en el 
-principal asesor científico del Vector Institute en Toronto.
+principal asesor científico del Vector Institute en Toronto\cite{wikigeoffrey}.
 
 Con David Rumelhart y Ronald J. Williams, Hinton fue coautor de un 
 artículo muy citado publicado en 1986 que popularizó el algoritmo 
@@ -493,7 +493,7 @@ estudiante de doctorado que acababa de graduarse. A
 Les 3 Brasseurs (Los tres cerveceros), un abrevadero favorito de 
 Montreal, algunos amigos le pidieron ayuda con un proyecto 
 bastante desafiante en el que estaban trabajando: un programa que 
-podía crear fotos por sí mismo.
+podía crear fotos por sí mismo\cite{techreview}.
 
 Los investigadores ya estaban usando redes neuronales como
 modelos "generativos" para crear nuevos datos plausibles propios. 
@@ -739,41 +739,44 @@ Puede que tenga razón, pero su conclusión de que la tecnología no
 puede curar el problema de las noticias falsas no es algo que 
 muchos quieran escuchar.
 
-
 \begin{thebibliography}{9}
 
 
-\bibitem[WIKIGAN]{wikigan}
-Wikipedia Redes Antagónicas,\url{https://es.wikipedia.org/wiki/Red_generativa_antagónica}
+\bibitem[WIKI GAN]{wikigan}\href{https://es.wikipedia.org/wiki/Red_generativa_antagónica}{Wikipedia Redes Antagónicas}
 
 \bibitem[RAPIDMINER]{rapidminer}
-Rapid Miner sitio,\url{https://rapidminer.com/glossary/generative-adversarial-networks}
+\href{https://rapidminer.com/glossary/generative-adversarial-networks}{Sitio de Rapid Miner}
 
-\bibitem[TECHREVIEW][techreview]
- Technology Review,\url{https://www.technologyreview.com/2018/02/21/145289/the-ganfather-the-man-whos-given-machines-the-gift-of-imagination/}
+\bibitem[TECHREVIEW]{techreview}
+ \href{https://www.technologyreview.com/2018/02/21/145289/the-ganfather-the-man-whos-given-machines-the-gift-of-imagination/}{Sitio deTechnology Review}
 
 \bibitem[PUENTESDIGIT]{puentesdigit}
-Puentes Digitales,\url{https://puentesdigitales.com/2019/04/05/todo-lo-que-necesitas-saber-sobre-las-gan-redes-generativas-antagonicas/}
+\href{https://puentesdigitales.com/2019/04/05/todo-lo-que-necesitas-saber-sobre-las-gan-redes-generativas-antagonicas/}{Sitio de Puentes Digitales}
 
 
-\bibitem[WIKILOGIT]{wikilogit}
-Wikipedia Regresión Logística,\url{https://en.wikipedia.org/wiki/Logistic_regression}
+\bibitem[WIKI LOGIT]{wikilogit}
+\href{https://en.wikipedia.org/wiki/Logistic_regression}{Wikipedia Regresión Logística}
 
-\bibitem[WIKIPERCEPT]{wikipercept}
-Wikipedia Perceptrón,\url{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n}
+\bibitem[WIKI PERCEPT]{wikipercept}
+\href{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n}{Wikipedia Perceptrón}
 
-\bibitem[WIKIMULTILAYER]{wikimultilayer}
-Wikipedia Perceptrón Multicapas,\url{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n_multicapa}
+\bibitem[WIKI MULTILAYER]{wikimultilayer}
+\href{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n_multicapa}{Wikipedia Perceptrón Multicapas}
 
-\bibitem[WIKIFRANK]{wikifrank}
-Wikipedia Frank Rosenblatt,\url{https://es.wikipedia.org/wiki/Frank_Rosenblatt}
+\bibitem[WIKI FRANK]{wikifrank}
+\href{https://es.wikipedia.org/wiki/Frank_Rosenblatt}{Wikipedia Frank Rosenblatt}
 
-\bibitem[WIKIYANN]{wikiyann}
-Wikipedia Yann LeCun,\url{https://es.wikipedia.org/wiki/Yann_LeCun}
+\bibitem[WIKI YANN]{wikiyann}
+\href{https://es.wikipedia.org/wiki/Yann_LeCun}{Wikipedia Yann LeCun}
 
-\bibitem[WIKIGEOFFREY]{wikigeoffrey}
-Wikipedia Geoffrey Hinton,\url{https://en.wikipedia.org/wiki/Geoffrey_Hinton}
+\bibitem[WIKI GEOFFREY]{wikigeoffrey}
+\href{https://en.wikipedia.org/wiki/Geoffrey_Hinton}{Wikipedia Geoffrey Hinton}
+
+\bibitem[WIKI PIERRE]{wikipierre}\href{https://en.wikipedia.org/wiki/Pierre_Fran\%C3\%A7ois_Verhulst}{Wikipedia Pierre Francois Verhulst}
+
+\bibitem[A BRIEF HISTORY]{history}\href{https://www.skynettoday.com/overviews/neural-net-history}{A Brief History of Neural Nets and Deep Learning}
 
 \end{thebibliography}
-
+\newpage
+\tableofcontents
 \end{document}
