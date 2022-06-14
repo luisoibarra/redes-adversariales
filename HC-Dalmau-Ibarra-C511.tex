@@ -72,7 +72,7 @@ Luis Enrique Dalmau Coopat C511}
 
 `` Al enfrentar las redes neuronales entre sí, Ian Goodfellow ha 
 creado una poderosa herramienta de IA. Ahora él y el resto de
-nosotros, debemos afrontar las consecuencias.``
+nosotros, debemos afrontar las consecuencias.''
 
 \begin{flushright}
 
@@ -92,8 +92,8 @@ en el siglo XX.
 Evolución de las Redes Neuronales en Ciencias de la Computación:
 \begin{itemize}
 
-    \item{1958 – Perceptron}
-    \item{1965 – Perceptron Multicapas}
+    \item{1958 – Perceptrón}
+    \item{1965 – Perceptrón Multicapas}
     \item{1980’s
     	\begin{itemize}
     	\item{Neuronas Sigmoidales}
@@ -115,20 +115,20 @@ Evolución de las Redes Neuronales en Ciencias de la Computación:
 \end{itemize}[citar]
 
 
-\subsection{Perceptron}
+\subsection{Perceptrón}
 \begin{wrapfigure}{r}{0.15\textwidth} %this figure will be at the right
     \centering
     \includegraphics[width=0.15\textwidth]{./images/220px-Rosenblatt_21.jpg}
     \caption{Frank Rossenblatt}
 \end{wrapfigure}
 
-Las redes neuronales nacieron con el Perceptron a mediados del 
+Las redes neuronales nacieron con el Perceptrón a mediados del 
 siglo XX. El primer tipo de red neuronal y la menos compleja pero 
 un gigantezco primer paso en la dirección correcta.
 
 Entre las décadas de 1950 y 1960 el científico Frank Rosenblatt, 
 inspirado en el trabajo de Warren McCulloch y Walter Pitts creó el 
-Perceptron, la unidad desde donde nacerían y se potenciarían las 
+Perceptrón, la unidad desde donde nacerían y se potenciarían las 
 redes neuronales artificiales.
 
 
@@ -139,9 +139,8 @@ York), donde fue sucesivamente psicólogo investigador, psicólogo
 sénior y jefe de la sección de sistemas cognitivos,
 también dirigió sus primeros trabajos 
 sobre perceptrones, que culminaron en el desarrollo
- y construcción del hardware del 
- perceptron Mark I en
-1960.
+y construcción del hardware del 
+perceptrón Mark I en 1960.
 Este era esencialmente el primer ordenador que podría aprender 
 habilidades nuevas a prueba y error, utilizando un tipo de red 
 neuronal que simula el proceso de pensamiento humano. 
@@ -149,11 +148,11 @@ neuronal que simula el proceso de pensamiento humano.
 \begin{wrapfigure}{l}{0.2\textwidth} %this figure will be at the right
     \centering
     \includegraphics[width=0.2\textwidth]{./images/net_perceptron.png}
-    \caption{Perceptron}
+    \caption{Perceptrón}
 \end{wrapfigure}
-Un perceptron toma varias entradas binarias x1, x2, etc y produce 
+Un perceptrón toma varias entradas binarias x1, x2, etc y produce 
 una sóla salida binaria. Para calcular la salida, Rosenblatt 
-introduce el concepto de ``pesos`` w1, w2, etc, un número real que 
+introduce el concepto de ``pesos'' w1, w2, etc, un número real que 
 expresa la importancia de la respectiva entrada con la salida. La 
 salida de la neurona será 1 o 0 si la suma de la multiplicación de 
 pesos por entradas es mayor o menor a un determinado umbral.
@@ -164,11 +163,11 @@ resolver problemas no lineales.
 
 \qquad
 
-\subsection{Perceptron Multicapas}
+\subsection{Perceptrón Multicapas}
 \begin{wrapfigure}{l}{0.25\textwidth} %this figure will be at the right
     \centering
     \includegraphics[width=0.25\textwidth]{./images/net_multilayer.png}
-    \caption{Perceptron Multicapas}
+    \caption{Perceptrón Multicapas}
 \end{wrapfigure}
 En 1969, Minsky y Papert, demuestran que el perceptrón simple y 
 ADALINE no puede resolver problemas no lineales (por ejemplo, 
@@ -176,7 +175,7 @@ XOR). La combinación de varios perceptrones simples podría
 resolver ciertos problemas no lineales pero no existía un 
 mecanismo automático para adaptar los pesos de la capa oculta. 
 Rumelhart y otros autores, en 1986, presentan la ``Regla Delta 
-Generalizada`` para adaptar los pesos propagando los errores hacia 
+Generalizada'' para adaptar los pesos propagando los errores hacia 
 atrás, es decir, propagar los errores hacia las capas ocultas 
 inferiores.
 
@@ -198,10 +197,10 @@ inferiores.
 \end{wrapfigure}
 Para poder lograr que las redes de neuronas aprendieran solas fue 
 necesario introducir un nuevo tipo de neuronas. Las llamadas 
-Neuronas Sigmoides son similares al perceptron, pero permiten que 
+Neuronas Sigmoides son similares al perceptrón, pero permiten que 
 las entradas, en vez de ser ceros o unos, puedan tener valores 
 reales como 0,5 ó 0,377 ó lo que sea. También aparecen las 
-neuronas ``bias`` que siempre suman 1 en las diversas capas para 
+neuronas ``bias'' que siempre suman 1 en las diversas capas para 
 resolver ciertas situaciones. Ahora las salidas en vez de ser 0 ó 
 1, será d(w . x + b) donde d será la función sigmoide definida 
 como $d(z) = \dfrac{1}{( 1 +e^{-z})}$ . Esta sería la primera 
@@ -215,7 +214,7 @@ función de activación.
 \end{wrapfigure}
 
 La función logística o sigmoidal fue desarrollada como un modelo 
-de crecimiento de población y nombrada ``logística`` por Pierre 
+de crecimiento de población y nombrada ``logística'' por Pierre 
 François Verhulst en las décadas de 1830 y 1840, bajo la dirección 
 de Adolphe Quetelet.
 En su primer artículo (1838), Verhulst no especificó cómo ajustaba 
@@ -229,7 +228,7 @@ redescubren esta misma funcion en otros ámbitos, llamándolas de
 diversas maneras. En química como modelo de autocatálisis (Wilhelm 
 Ostwald, 1883) y redescubierto como modelo de crecimiento
 demográfico en 1920 por Raymond Pearl y Lowell Reed, publicado 
-como Pearl \& Reed (1920). El término ``logística`` fue revivido 
+como Pearl \& Reed (1920). El término ``logística'' fue revivido 
 por Udny Yule en 1925 y ha sido seguido desde entonces.
 
 
@@ -238,7 +237,6 @@ Con esta nueva fórmula, se puede lograr que pequeñas alteraciones
 en valores de los pesos (deltas) produzcan pequeñas alteraciones 
 en la salida. Por lo tanto, podemos ir ajustando muy de a poco los 
 pesos de las conexiones e ir obteniendo las salidas deseadas.
-[]
 
 \subsubsection{Redes Feedforward}
 
@@ -249,7 +247,7 @@ adelante. Hay redes que veremos más adelante en las que sí que
 existen esos loops (Recurrent Neural Networks).
 
 Además existe el concepto de ``fully connected Feedforward 
-Networks`` y se refiere a que todas las neuronas de entrada, están 
+Networks'' y se refiere a que todas las neuronas de entrada, están 
 conectadas con todas las neuronas de la siguiente capa.
 
 \subsubsection{Backpropagation}
@@ -340,7 +338,7 @@ Geoffrey Hinton y Yoshua Bengio por su trabajo en aprendizaje
 profundo.
 
 LeCun, junto con Hinton y Bengio, son conocidos por algunos como 
-los ``Padrinos de la IA`` y ``Padrinos del Aprendizaje Profundo``. 
+los ``Padrinos de la IA'' y ``Padrinos del Aprendizaje Profundo''. 
 
 
 
@@ -354,7 +352,7 @@ extraídas manteniendo la información más importante. Luego se hace
 una nueva convolución y otro pooling que alimenta una red 
 feedforward multicapa. La salida final de la red es un grupo de 
 nodos que clasifican el resultado, por ejemplo un nodo para cada 
-número del 0 al 9 (es decir, 10 nodos, se ``activan`` de a uno).
+número del 0 al 9 (es decir, 10 nodos, se ``activan'' de a uno).
 
 Esta arquitectura usando capas profundas y la clasificación de 
 salida abrieron un mundo nuevo de posibilidades en las redes 
@@ -473,9 +471,9 @@ características de unos datos, predicen una etiqueta o categoría a
 la que pertenecen esos datos.
 
 Por ejemplo, dadas todas las palabras de un correo electrónico un 
-algoritmo discriminatorio podría predecir si el mensaje es `spam` 
-o `no spam`. Spam es una de las etiquetas, y la `bolsa de 
-palabras` recopiladas del correo electrónico son las 
+algoritmo discriminatorio podría predecir si el mensaje es `spam' 
+o `no spam'. Spam es una de las etiquetas, y la `bolsa de 
+palabras' recopiladas del correo electrónico son las 
 características que constituyen los datos de entrada.
 
 Así que los algoritmos discriminatorios asignan características a 
@@ -489,7 +487,7 @@ Por eso la pregunta que un algoritmo generativo intenta responder
 es:
 
 ``¿Asumiendo que este correo electrónico es spam, ¿Cómo de 
-probable es que sean estas características?``
+probable es que sean estas características?''
 
 \subsection{Nacimiento de las GAN}
 Una noche de 2014, Ian Goodfellow fue a beber para celebrar con un 
@@ -521,7 +519,7 @@ darle una oportunidad. Goodfellow codificó en las primeras horas y
 luego probó su software y este funcionó a la primera.
 
 Lo que inventó esa noche ahora se llama GAN, o ``red antagónica 
-generativa``. La técnica ha despertado gran
+generativa''. La técnica ha despertado gran
 entusiasmo en el campo del aprendizaje automático y convirtió a su 
 creador en una celebridad de la IA.
 
@@ -562,7 +560,7 @@ diga.
  almacén concurrido sin necesidad de que lo lleven.
 
 Eso marcará un gran salto adelante en lo que se conoce en IA como 
-``aprendizaje no supervisado``.
+``aprendizaje no supervisado''.
 
 Nuestra capacidad de imaginar y reflexionar sobre muchos 
 escenarios diferentes es parte de lo que nos hace humanos. Y 
@@ -574,7 +572,7 @@ mejor idea en aprendizaje profundo en los últimos 20 años.”
 
 Otro grande de la IA, Andrew Ng, ex científico jefe de Baidu de 
 China, dice que los GAN representan ``un
-avance significativo y fundamental” que inspiró a una creciente 
+avance significativo y fundamental'' que inspiró a una creciente 
 comunidad global de investigadores.
 
 \subsection{Ian Goodfellow, el padre de las GAN}
@@ -582,13 +580,14 @@ comunidad global de investigadores.
 \begin{wrapfigure}{r}{0.25\textwidth} %this figure will be at the right
     \centering
     \includegraphics[width=0.25\textwidth]{./images/ma18-iangoodfellow2a.png}
+    \caption{``Ian Goodfellow''}
 \end{wrapfigure}
 
 
 Goodfellow ahora es científico investigador en el equipo de Google 
 Brain, en la sede de la compañía en Mountain View,
 California. Todavía está sorprendido por su estatus de 
-superestrella, calificándolo de ``un poco surrealista``. Quizás lo 
+superestrella, calificándolo de ``un poco surrealista''. Quizás lo 
 menos sorprendente es que, después de haber hecho su 
 descubrimiento, ahora pasa gran parte de su tiempo tra5bajando 
 contra aquellos que desean usarlo para fines malvados.
@@ -640,7 +639,7 @@ Aún así, los desafíos no han disuadido a los investigadores. Desde
 que Goodfellow y algunos otros publicaron el primer estudio sobre 
 su descubrimiento, en 2014, se han escrito cientos de artículos 
 relacionados con GAN. Un fanático de la tecnología incluso ha 
-creado una web página llamada ``Zoológico GAN``, dedicada a 
+creado una web página llamada ``Zoológico GAN'', dedicada a 
 realizar un seguimiento de las diversas versiones de la técnica 
 que se han desarrollado.
 
@@ -668,7 +667,7 @@ hace mucho más rápido.
 \begin{wrapfigure}{l}{0.3\textwidth} %this figure will be at the right
     \centering
      \includegraphics[width=0.3\textwidth]{./images/interiores.png}
-	  \caption{``La creación de Goodfellow se puede utilizar para imaginar todo tipo de cosas, incluidos nuevos diseños de interiores.``}
+	  \caption{``La creación de Goodfellow se puede utilizar para imaginar todo tipo de cosas, incluidos nuevos diseños de interiores.''}
 \end{wrapfigure}
 
 
@@ -687,7 +686,7 @@ estrictamente protegidos.
 \begin{wrapfigure}{r}{0.3\textwidth} %this figure will be at the right
     \centering
      \includegraphics[width=0.3\textwidth]{./images/rares_images.png}
-	  \caption{``Hacer que GANS funcione bien puede ser complicado. Si hay fallas, los resultados pueden ser extraños.``(Alec Radford)}
+	  \caption{``Hacer que GANS funcione bien puede ser complicado. Si hay fallas, los resultados pueden ser extraños.''(Alec Radford)}
 \end{wrapfigure}
 Sin embargo, hay un lado más oscuro. Una máquina diseñada para 
 crear falsificaciones realistas es un arma perfecta para los 
@@ -704,13 +703,13 @@ pero lo empeorarán.
  causados por la inhalación y la exhalación que las GAN encuentran 
  difíciles de imitar con precisión. Pero advierte que las GAN se  
  adaptarán a su vez. ``Estamos fundamentalmente en una posición  
- débil``, dice Farid.
+ débil'', dice Farid.
 
 
 
 Este juego del gato y el ratón también se desarrollará en la 
 ciberseguridad. Los investigadores ya están destacando el riesgo 
-de los ataques de ``caja negra``, en los que las GAN se utilizan 
+de los ataques de ``caja negra'', en los que las GAN se utilizan 
 para descubrir los modelos de aprendizaje automático con los que 
 muchos programas de seguridad detectan el malware. Habiendo 
 adivinado cómo funciona el algoritmo de un defensor, un atacante 
@@ -730,7 +729,7 @@ una idea de último momento. Cuando se dieron cuenta de los
 riesgos, los malos tenían una ventaja significativa. ``Claramente, 
 ya estamos más allá del comienzo``, dice, ``pero con suerte 
 podemos lograr avances significativos en seguridad antes de que 
-nos adentremos demasiado``.
+nos adentremos demasiado''.
 
 Sin embargo, no cree que haya una solución puramente tecnológica 
 para la falsificación. En su lugar, cree, tendremos que depender 
