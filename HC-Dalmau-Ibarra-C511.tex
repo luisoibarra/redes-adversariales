@@ -44,6 +44,7 @@
 \renewcommand\labelitemiv{•}
 }
 
+
 %
 \usepackage{graphicx}
 \usepackage[hidelinks,breaklinks=true,backref=page]{hyperref}
@@ -62,6 +63,7 @@ Luis Enrique Dalmau Coopat C511}
 % First names are abbreviated in the running head.
 % If there are more than two authors, 'et al.' is used.
 %
+\renewcommand{\refname}{Bibliografía} 
 
 \maketitle
 
@@ -81,7 +83,7 @@ en caso de no ser correctamente entrenadas.
 
 \section{Introducción}
 
-Las Redes Generativas Adversariales presentan un gran paso en el desarrollo de la Inteligencia
+Las Redes Generativas Adversariales representan un gran paso en el desarrollo de la Inteligencia
 Artificial. Estas son un caso particular de las Redes Neuronales Artificiales nacidas en el siglo XX.
 Como dijo \href{https://www.technologyreview.com/author/martin-giles/}{Martin Giles} 
 ``Al enfrentar las redes neuronales entre sí, Ian Goodfellow ha creado una poderosa herramienta 
@@ -115,7 +117,7 @@ Evolución de las Redes Neuronales en Ciencias de la Computación:
 
 \end{itemize}[citar]
 
-
+\newpage
 \subsection{Perceptrón}
 \begin{wrapfigure}{r}{0.15\textwidth} %this figure will be at the right
     \centering
@@ -208,10 +210,10 @@ como $d(z) = \dfrac{1}{( 1 +e^{-z})}$ . Esta sería la primera
 función de activación.
 \\
 \\
-\begin{wrapfigure}{r}{0.2\textwidth} %this figure will be at the right
+\begin{wrapfigure}{r}{0.1\textwidth} %this figure will be at the right
     \centering
-    \includegraphics[width=0.2\textwidth]{./images/Pierre_Francois.jpeg}
-    \caption{Pierre Francois Verhulst}
+    \includegraphics[width=0.1\textwidth]{./images/Pierre_Francois.jpeg}
+    \caption{Pierre F.Verhulst}
 \end{wrapfigure}
 
 La función logística o sigmoidal fue desarrollada como un modelo 
@@ -326,7 +328,7 @@ neurociencia computacional. Es profesor de plata del Courant
 Institute of Mathematical Sciences de la Universidad de Nueva York 
 y vicepresidente, científico jefe de IA en Meta ( Anteriormente 
 Facebook ).
-
+\newpage
 Es conocido por su trabajo en reconocimiento óptico de caracteres 
 y visión por computadora utilizando redes neuronales 
 convolucionales, y es el padre fundador de redes 
@@ -406,10 +408,10 @@ La red de creencias profundas (DBN) es un tipo de red neuronal
 profunda, que se compone de capas apiladas de máquinas de 
 Boltzmann restringidas (RBM). Es un modelo generativo y fue 
 propuesto por Geoffrey Hinton en 2006.
-\\
-\begin{wrapfigure}{r}{0.25\textwidth} %this figure will be at the right
+
+\begin{wrapfigure}{r}{0.2\textwidth} %this figure will be at the right
     \centering
-    \includegraphics[width=0.25\textwidth]{./images/Geoffrey_Hinton.jpeg}
+    \includegraphics[width=0.2\textwidth]{./images/Geoffrey_Hinton.jpeg}
     \caption{Geoffrey Hinton}
 \end{wrapfigure}
 
@@ -659,9 +661,9 @@ de simulación existentes, aprende a generar predicciones bastante
 precisas de cómo se comportará una partícula en particular, y lo 
 hace mucho más rápido.
 
-\begin{wrapfigure}{l}{0.3\textwidth} %this figure will be at the right
+\begin{wrapfigure}{l}{0.5\textwidth} %this figure will be at the right
     \centering
-     \includegraphics[width=0.3\textwidth]{./images/interiores.png}
+     \includegraphics[width=0.5\textwidth]{./images/interiores.png}
 	  \caption{``La creación de Goodfellow se puede utilizar para imaginar todo tipo de cosas, incluidos nuevos diseños de interiores.''}
 \end{wrapfigure}
 
@@ -681,18 +683,18 @@ estrictamente protegidos.
 \begin{wrapfigure}{r}{0.3\textwidth} %this figure will be at the right
     \centering
      \includegraphics[width=0.3\textwidth]{./images/rares_images.png}
-	  \caption{``Hacer que GANS funcione bien puede ser complicado. Si hay fallas, los resultados pueden ser extraños.''(Alec Radford)}
+	  \caption{``Hacer que las GANs funcionen bien puede ser complicado. Si hay fallas, los resultados pueden ser extraños.''(Alec Radford)}
 \end{wrapfigure}
 Sin embargo, hay un lado más oscuro. Una máquina diseñada para 
 crear falsificaciones realistas es un arma perfecta para los 
 proveedores de noticias falsas que quieren influir en todo, desde 
 los precios de las acciones hasta las elecciones. Las herramientas 
 de IA ya se están utilizando para poner imágenes de rostros de 
-otras personas en los cuerpos de estrellas porno y poner palabras 
-en la boca de los políticos. Las GAN no crearon este problema, 
-pero lo empeorarán.
+otras personas en los cuerpos de estrellas del cine adulto y poner 
+palabras en la boca de los políticos. Las GAN no crearon este 
+problema, pero lo empeorarán.
  
- Hany Farid, que estudia ciencia forense digital en Dartmouth ç 
+ Hany Farid, que estudia ciencia forense digital en Dartmouth 
  College, está trabajando en mejores formas de detectar videos  
  falsos, como detectar cambios leves en el color de los rostros  
  causados por la inhalación y la exhalación que las GAN encuentran 
@@ -704,7 +706,7 @@ pero lo empeorarán.
 
 Este juego del gato y el ratón también se desarrollará en la 
 ciberseguridad. Los investigadores ya están destacando el riesgo 
-de los ataques de ``caja negra'', en los que las GAN se utilizan 
+de los ataques de ``caja negra``, en los que las GAN se utilizan 
 para descubrir los modelos de aprendizaje automático con los que 
 muchos programas de seguridad detectan el malware. Habiendo 
 adivinado cómo funciona el algoritmo de un defensor, un atacante 
@@ -738,31 +740,40 @@ puede curar el problema de las noticias falsas no es algo que
 muchos quieran escuchar.
 
 
-\section{Referencias}
+\begin{thebibliography}{9}
 
 
-\href{https://es.wikipedia.org/wiki/Red_generativa_antagónica}{https://es.wikipedia.org/wiki/Red\_generativa\_antag\%C3\%B3nica}
+\bibitem[WIKIGAN]{wikigan}
+Wikipedia Redes Antagónicas,\url{https://es.wikipedia.org/wiki/Red_generativa_antagónica}
 
-\url{https://www.aprendemachinelearning.com/breve-historia-de-las-redes-neuronales-artificiales/}
+\bibitem[RAPIDMINER]{rapidminer}
+Rapid Miner sitio,\url{https://rapidminer.com/glossary/generative-adversarial-networks}
 
-\url{https://rapidminer.com/glossary/generative-adversarial-networks/}
+\bibitem[TECHREVIEW][techreview]
+ Technology Review,\url{https://www.technologyreview.com/2018/02/21/145289/the-ganfather-the-man-whos-given-machines-the-gift-of-imagination/}
 
-\url{https://www.technologyreview.com/2018/02/21/145289/the-ganfather-the-man-whos-given-machines-the-gift-of-imagination/}
+\bibitem[PUENTESDIGIT]{puentesdigit}
+Puentes Digitales,\url{https://puentesdigitales.com/2019/04/05/todo-lo-que-necesitas-saber-sobre-las-gan-redes-generativas-antagonicas/}
 
-\url{https://puentesdigitales.com/2019/04/05/todo-lo-que-necesitas-saber-sobre-las-gan-redes-generativas-antagonicas/}
 
-\url{https://www.aprendemachinelearning.com/breve-historia-de-las-redes-neuronales-artificiales/}
+\bibitem[WIKILOGIT]{wikilogit}
+Wikipedia Regresión Logística,\url{https://en.wikipedia.org/wiki/Logistic_regression}
 
-\url{https://en.wikipedia.org/wiki/Logistic_regression#History}
+\bibitem[WIKIPERCEPT]{wikipercept}
+Wikipedia Perceptrón,\url{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n}
 
-\url{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n}
+\bibitem[WIKIMULTILAYER]{wikimultilayer}
+Wikipedia Perceptrón Multicapas,\url{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n_multicapa}
 
-\url{https://es.wikipedia.org/wiki/Perceptr\%C3\%B3n_multicapa}
+\bibitem[WIKIFRANK]{wikifrank}
+Wikipedia Frank Rosenblatt,\url{https://es.wikipedia.org/wiki/Frank_Rosenblatt}
 
-\url{https://es.wikipedia.org/wiki/Frank_Rosenblatt}
+\bibitem[WIKIYANN]{wikiyann}
+Wikipedia Yann LeCun,\url{https://es.wikipedia.org/wiki/Yann_LeCun}
 
-\url{https://es.wikipedia.org/wiki/Yann_LeCun}
+\bibitem[WIKIGEOFFREY]{wikigeoffrey}
+Wikipedia Geoffrey Hinton,\url{https://en.wikipedia.org/wiki/Geoffrey_Hinton}
 
-\url{https://en.wikipedia.org/wiki/Geoffrey_Hinton}
+\end{thebibliography}
 
 \end{document}
