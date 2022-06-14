@@ -66,27 +66,28 @@ Luis Enrique Dalmau Coopat C511}
 \maketitle
 
 \begin{abstract}
-	IA, Redes Neuronales, Redes Generativas Adversariales, RGA, 
-	GAN, AI, Neural Networks, Generative Adversarial Networks.
+
+El trabajo trata sobre los distintos tipos de redes neuronales y cómo estas fueron desarrollándose
+para llegar a ser uno de los avances más importantes de Ciencias de la Computación del siglo XX y XXI.
+Se prestará especial atención a las Redes Generativas Adversariales, la historia detrás de su origen y
+la importancia que tiene en la actualidad, así como sus problemas y efectos curiosos que pueden ocurrir
+en caso de no ser correctamente entrenadas. 
+
 \end{abstract}
 
-`` Al enfrentar las redes neuronales entre sí, Ian Goodfellow ha 
-creado una poderosa herramienta de IA. Ahora él y el resto de
-nosotros, debemos afrontar las consecuencias.''
+\textbf{Palabras clave}: Inteligencia Artificial(IA), Redes Neuronales, Redes Generativas Adversariales(RGA).
 
-\begin{flushright}
+\textbf{Keywords}: Artifitial Inteligence(AI), Neural Networks, Generative Adversarial Networks (GAN).
 
-\href{https://www.technologyreview.com/author/martin-giles/}
-{Martin Giles}
+\section{Introducción}
 
-\end{flushright}
-
-Pero, ¿de esta frase que debemos conocer?. ¿Qué son las redes 
-neuronales y quién es Ian Goodfellow?
-
-Las redes generativas adversariales o redes generativas 
-antagónicas son un caso particular de las redes neuronales nacidas 
-en el siglo XX.
+Las Redes Generativas Adversariales presentan un gran paso en el desarrollo de la Inteligencia
+Artificial. Estas son un caso particular de las Redes Neuronales Artificiales nacidas en el siglo XX.
+Como dijo \href{https://www.technologyreview.com/author/martin-giles/}{Martin Giles} 
+``Al enfrentar las redes neuronales entre sí, Ian Goodfellow ha creado una poderosa herramienta 
+de IA. Ahora él y el resto de nosotros, debemos afrontar las consecuencias.''. Pero, para comprender 
+esta frase primero debemos conocer las siguientes interrogantes. ¿Qué son y cómo surgieron las redes neuronales? 
+¿Cúal es la idea detrás de las RGA y cómo surgió? y por supuesto ¿Quién es Ian Goodfellow?.
 
 \section{Antecedentes de las GAN}
 Evolución de las Redes Neuronales en Ciencias de la Computación:
@@ -124,13 +125,11 @@ Evolución de las Redes Neuronales en Ciencias de la Computación:
 
 Las redes neuronales nacieron con el Perceptrón a mediados del 
 siglo XX. El primer tipo de red neuronal y la menos compleja pero 
-un gigantezco primer paso en la dirección correcta.
-
-Entre las décadas de 1950 y 1960 el científico Frank Rosenblatt, 
+un gigantezco primer paso en la dirección correcta. Estas surgieron
+entre las décadas de 1950 y 1960 cuando el científico Frank Rosenblatt, 
 inspirado en el trabajo de Warren McCulloch y Walter Pitts creó el 
 Perceptrón, la unidad desde donde nacerían y se potenciarían las 
 redes neuronales artificiales.
-
 
 Frank Rossenblatt (11 de julio de 1928-11 de julio de 1971) fue un
 psicólogo estadounidense notable en el campo de inteligencia
@@ -150,15 +149,15 @@ neuronal que simula el proceso de pensamiento humano.
     \includegraphics[width=0.2\textwidth]{./images/net_perceptron.png}
     \caption{Perceptrón}
 \end{wrapfigure}
-Un perceptrón toma varias entradas binarias x1, x2, etc y produce 
-una sóla salida binaria. Para calcular la salida, Rosenblatt 
-introduce el concepto de ``pesos'' w1, w2, etc, un número real que 
+
+Un perceptrón toma varias entradas binarias $x_1$, $x_2$, etc y produce 
+una sola salida binaria. Para calcular la salida, Rosenblatt 
+introduce el concepto de ``pesos'' $w_1$, $w_2$, etc, un número real que 
 expresa la importancia de la respectiva entrada con la salida. La 
 salida de la neurona será 1 o 0 si la suma de la multiplicación de 
 pesos por entradas es mayor o menor a un determinado umbral.
-
 Sus principales usos son decisiones binarias sencillas, o para 
-crear funciones lógicas como OR, AND. Sin embargo no podia 
+crear funciones lógicas como OR, AND. Sin embargo no podía 
 resolver problemas no lineales.
 
 \qquad
@@ -169,6 +168,7 @@ resolver problemas no lineales.
     \includegraphics[width=0.25\textwidth]{./images/net_multilayer.png}
     \caption{Perceptrón Multicapas}
 \end{wrapfigure}
+
 En 1969, Minsky y Papert, demuestran que el perceptrón simple y 
 ADALINE no puede resolver problemas no lineales (por ejemplo, 
 XOR). La combinación de varios perceptrones simples podría 
@@ -180,12 +180,12 @@ atrás, es decir, propagar los errores hacia las capas ocultas
 inferiores.
 
 
- De esta forma se consigue trabajar con múltiples capas y con 
- funciones de activación no lineales. Se demuestra que el 
- perceptrón multicapa es un aproximador universal. Un perceptrón 
- multicapa puede aproximar relaciones no lineales entre los datos 
- de entrada y salida. Esta red se ha convertido en una de las 
- arquitecturas más utilizadas en el momento.
+De esta forma se consigue trabajar con múltiples capas y con 
+funciones de activación no lineales. Se demuestra que el 
+perceptrón multicapa es un aproximador universal. Un perceptrón 
+multicapa puede aproximar relaciones no lineales entre los datos 
+de entrada y salida. Esta red se ha convertido en una de las 
+arquitecturas más utilizadas en el momento.
 
 \subsection{Avances en los 80}
 
@@ -195,6 +195,7 @@ inferiores.
     \includegraphics[width=0.2\textwidth]{./images/Logistic-curve.png}
     \caption{Función Sigmoid}
 \end{wrapfigure}
+
 Para poder lograr que las redes de neuronas aprendieran solas fue 
 necesario introducir un nuevo tipo de neuronas. Las llamadas 
 Neuronas Sigmoides son similares al perceptrón, pero permiten que 
@@ -224,13 +225,12 @@ curva pasara por tres puntos observados, lo que produjo una
 predicción deficiente.
 
 Posterior a este primer descubrimiento, muchos otros autores
-redescubren esta misma funcion en otros ámbitos, llamándolas de
+redescubren esta misma función en otros ámbitos, llamándolas de
 diversas maneras. En química como modelo de autocatálisis (Wilhelm 
 Ostwald, 1883) y redescubierto como modelo de crecimiento
 demográfico en 1920 por Raymond Pearl y Lowell Reed, publicado 
 como Pearl \& Reed (1920). El término ``logística'' fue revivido 
 por Udny Yule en 1925 y ha sido seguido desde entonces.
-
 
 
 Con esta nueva fórmula, se puede lograr que pequeñas alteraciones 
@@ -242,30 +242,29 @@ pesos de las conexiones e ir obteniendo las salidas deseadas.
 
 Se les llama así a las redes en que las salidas de una capa son 
 utilizadas como entradas en la próxima capa. Esto quiere decir que 
-no hay loops “hacia atrás”. Siempre se “alimenta” de valores hacia 
+no hay loops "hacia atrás". Siempre se "alimenta" de valores hacia 
 adelante. Hay redes que veremos más adelante en las que sí que 
-existen esos loops (Recurrent Neural Networks).
-
-Además existe el concepto de ``fully connected Feedforward 
-Networks'' y se refiere a que todas las neuronas de entrada, están 
-conectadas con todas las neuronas de la siguiente capa.
+existen esos ciclos (Recurrent Neural Networks). Además existe el 
+concepto de ``fully connected Feedforward Networks'' y se refiere 
+a que todas las neuronas de entrada, están conectadas con todas las 
+neuronas de la siguiente capa.
 
 \subsubsection{Backpropagation}
 
 Gracias al algoritmo de backpropagation se hizo posible entrenar 
-redes neuronales de multiples capas de manera supervisada. Al 
+redes neuronales de múltiples capas de manera supervisada. Al 
 calcular el error obtenido en la salida e ir propagando hacia las 
 capas anteriores se van haciendo ajustes pequeños (minimizando 
 costo) en cada iteración para lograr que la red aprenda 
 consiguiendo que la red pueda -por ejemplo- clasificar las 
 entradas correctamente.
 
-El termino retropropagacion (backpropagation) y su uso general en 
-redes neuronales se anuncio en Rumelhart, Hinton \& Williams 
-(1986), luego se elaboro y popularizo en Rumelhart, 
-Hinton \& Williams (1986), pero la tecnica se redescubrio de forma 
+El termino retropropagación (backpropagation) y su uso general en 
+redes neuronales se anunció en Rumelhart, Hinton \& Williams 
+(1986), luego se elaboró y popularizó en Rumelhart, 
+Hinton \& Williams (1986), pero la técnica se redescubrió de forma 
 independiente muchas veces y tuvo muchos predecesores que datan a 
-la decada de 1960.
+la década de 1960.
 
 Los conceptos básicos de la retropropagación continua se derivaron 
 en el contexto de la teoría del control por Henry J. Kelley en 
@@ -280,13 +279,13 @@ Seppo Linnainmaa. Paul Werbos fue el primero en los EE. UU. en
 proponer que podría usarse para redes neuronales después de 
 analizarlo en profundidad en su disertación de 1974. Si bien no se 
 aplicó a las redes neuronales, en 1970 Linnainmaa publicó el 
-método general para la diferenciación automática (AD). Aunque es 
+método general para la diferenciación automática (DA). Aunque es 
 muy controvertido, algunos científicos creen que este fue en 
 realidad el primer paso hacia el desarrollo de un algoritmo de 
 propagación hacia atrás. En 1973, Dreyfus adapta los parámetros de 
 los controladores en proporción a los gradientes de error. En 1974 
 Werbos mencionó la posibilidad de aplicar este principio a redes 
-neuronales artificiales, y en 1982 aplicó el método AD de 
+neuronales artificiales, y en 1982 aplicó el método DA de 
 Linnainmaa a funciones no lineales.
 
 Posteriormente, el método Werbos fue redescubierto y descrito en 
@@ -305,12 +304,15 @@ reconocimiento de patrones a través de retropropagación.
     \includegraphics[width=0.25\textwidth]{./images/net_convolutional.png}
     \caption{CNN}
 \end{wrapfigure}
-Las Convolutional Neural Networks son redes multilayered que toman 
+
+Las Convolutional Neural Networks (CNN) o Redes Neuronales Convolucionales 
+son redes multilayered que toman 
 su inspiración del cortex visual de los animales. Esta 
 arquitectura es útil en varias aplicaciones, principalmente 
 procesamiento de imágenes. La primera CNN fue creada por Yann 
 LeCun y estaba enfocada en el reconocimiento de letras 
 manuscritas.
+
 \begin{wrapfigure}{r}{0.25\textwidth} %this figure will be at the right
     \centering
     \includegraphics[width=0.25\textwidth]{./images/Yann_LeCun.jpeg}
@@ -327,20 +329,14 @@ Facebook ).
 
 Es conocido por su trabajo en reconocimiento óptico de caracteres 
 y visión por computadora utilizando redes neuronales 
-convolucionales (CNN), y es el padre fundador de redes 
+convolucionales, y es el padre fundador de redes 
 convolucionales. También es uno de los principales creadores de la 
 tecnología de compresión de imagen DjVu (junto con Léon Bottou y 
 Patrick Haffner). Co-desarrolló el lenguaje de programación Lush 
-con Léon Bottou.
-
-Es co-receptor del Premio Turing en 2018 de la ACM junto con 
+con Léon Bottou. Es además co-receptor del Premio Turing en 2018 de la ACM junto con 
 Geoffrey Hinton y Yoshua Bengio por su trabajo en aprendizaje 
-profundo.
-
-LeCun, junto con Hinton y Bengio, son conocidos por algunos como 
+profundo. LeCun, junto con Hinton y Bengio, son conocidos por algunos como 
 los ``Padrinos de la IA'' y ``Padrinos del Aprendizaje Profundo''. 
-
-
 
 La arquitectura de la primera CNN constaba de varias capas que 
 implementaban la extracción de características y luego clasificar. 
@@ -367,17 +363,17 @@ tareas de Procesamiento del Lenguaje natural.
     \caption{LSTM}
 \end{wrapfigure}
 
-Las Long short term memory son un tipo de Recurrent neural 
-network. Esta arquitectura permite conexiones “hacia atrás” entre 
-las capas. Esto las hace buenas para procesar datos de tipo “time 
-series” (datos históricos). En 1997 se crearon las LSTM que 
+Las Long Short Term Memory (LSTM) son un tipo de Recurrent neural 
+network. Esta arquitectura permite conexiones "hacia atrás" entre 
+las capas. Esto las hace buenas para procesar datos de tipo "time 
+series" (datos históricos). En 1997 se crearon las LSTM que 
 consisten en unas celdas de memoria que permiten a la red recordar 
 valores por períodos cortos o largos.
 
 Una celda de memoria contiene compuertas que administran como la 
 información fluye dentro o fuera. La puerta de entrada controla 
 cuando puede entran nueva información en la memoria. La puerta de 
-“olvido” controla cuanto tiempo existe y se retiene esa 
+"olvido" controla cuanto tiempo existe y se retiene esa 
 información. La puerta de salida controla cuando la información en 
 la celda es usada como salida de la celda. La celda contiene pesos 
 que controlan cada compuerta. El algoritmo de entrenamiento -
@@ -395,7 +391,7 @@ text-to-speech y otras tareas.
     \caption{DBN}
 \end{wrapfigure}
 
-Antes de las DBN en 2006 los modelos con “profundidad” (decenas o 
+Antes de las DBN en 2006 los modelos con "profundidad" (decenas o 
 cientos de capas) eran considerados demasiado difíciles de 
 entrenar (incluso con backpropagation) y el uso de las redes 
 neuronales artificiales quedó estancado. Con la creación de una 
@@ -452,7 +448,7 @@ supervisada (por ejemplo con backpropagation).
 Se cree que ese preentrenamiento es una de las causas de la gran 
 mejora en las redes neuronales y permitir el deep learning: pues 
 para asignar los valores se evalúa capa a capa, de a una, y no 
-“sufre” de cierto sesgo que causa el backpropagation, al entrenar 
+"sufre" de cierto sesgo que causa el backpropagation, al entrenar 
 a todas las capas en simultáneo.
 
 \section{Generatives Adversarial Networks}
@@ -468,9 +464,8 @@ generativos y, para ello, es útil contrastarlos con los llamados
 algoritmos discriminatorios. Los algoritmos discriminatorios 
 tratan de clasificar los datos de entrada. Es decir, dadas unas 
 características de unos datos, predicen una etiqueta o categoría a 
-la que pertenecen esos datos.
-
-Por ejemplo, dadas todas las palabras de un correo electrónico un 
+la que pertenecen esos datos. Por ejemplo, dadas todas las palabras 
+de un correo electrónico un 
 algoritmo discriminatorio podría predecir si el mensaje es `spam' 
 o `no spam'. Spam es una de las etiquetas, y la `bolsa de 
 palabras' recopiladas del correo electrónico son las 
@@ -490,6 +485,7 @@ es:
 probable es que sean estas características?''
 
 \subsection{Nacimiento de las GAN}
+
 Una noche de 2014, Ian Goodfellow fue a beber para celebrar con un 
 estudiante de doctorado que acababa de graduarse. A
 Les 3 Brasseurs (Los tres cerveceros), un abrevadero favorito de 
@@ -497,9 +493,8 @@ Montreal, algunos amigos le pidieron ayuda con un proyecto
 bastante desafiante en el que estaban trabajando: un programa que 
 podía crear fotos por sí mismo.
 
-Los investigadores ya estaban usando redes neuronales(HABLAR ANTEs 
-de REDES NEURONALES) como
-modelos “generativos” para crear nuevos datos plausibles propios. 
+Los investigadores ya estaban usando redes neuronales como
+modelos "generativos" para crear nuevos datos plausibles propios. 
 Pero los resultados a menudo no eran muy buenos: las imágenes de 
 un rostro generado por computadora tendía a ser borroso o a tener 
 errores como orejas faltantes. El plan que tenían los amigos de 
@@ -717,8 +712,8 @@ puede evadirlo e insertar código malicioso. El mismo enfoque
 también podría usarse para esquivar los filtros de spam y otras 
 defensas.
 
-“Hay muchas áreas de la ciencia y la ingeniería en las que 
-necesitamos optimizar algo. Esa va a ser la próxima gran ola”.
+``Hay muchas áreas de la ciencia y la ingeniería en las que 
+necesitamos optimizar algo. Esa va a ser la próxima gran ola''.
 
 Goodfellow es muy consciente de los peligros. Ahora, al frente de 
 un equipo en Google que se enfoca en hacer que el aprendizaje 
@@ -727,17 +722,17 @@ aprender la lección de las oleadas de innovación anteriores, en
 las que los tecnólogos trataron la seguridad y la privacidad como 
 una idea de último momento. Cuando se dieron cuenta de los 
 riesgos, los malos tenían una ventaja significativa. ``Claramente, 
-ya estamos más allá del comienzo``, dice, ``pero con suerte 
+ya estamos más allá del comienzo'', dice, ``pero con suerte 
 podemos lograr avances significativos en seguridad antes de que 
 nos adentremos demasiado''.
 
 Sin embargo, no cree que haya una solución puramente tecnológica 
 para la falsificación. En su lugar, cree, tendremos que depender 
 de las sociales, como enseñar a los niños el pensamiento crítico 
-al hacer que tomen cosas como clases de oratoria y debate. “En 
-oratoria y debate, estás compitiendo contra otro estudiante”, 
-dice, “y estás pensando en cómo elaborar afirmaciones engañosas o 
-cómo elaborar afirmaciones correctas que sean muy persuasivas”. 
+al hacer que tomen cosas como clases de oratoria y debate. ``En 
+oratoria y debate, estás compitiendo contra otro estudiante'', 
+dice, ``y estás pensando en cómo elaborar afirmaciones engañosas o 
+cómo elaborar afirmaciones correctas que sean muy persuasivas''. 
 Puede que tenga razón, pero su conclusión de que la tecnología no 
 puede curar el problema de las noticias falsas no es algo que 
 muchos quieran escuchar.
